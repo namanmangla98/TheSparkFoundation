@@ -1,0 +1,108 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 01, 2021 at 08:37 AM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `humanresources`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `thespark`
+--
+
+CREATE TABLE `thespark` (
+  `ID` int(10) NOT NULL,
+  `EmpName` varchar(20) DEFAULT NULL,
+  `Age` int(10) DEFAULT NULL,
+  `Gender` varchar(20) DEFAULT NULL,
+  `Salary` varchar(100) DEFAULT NULL,
+  `Location` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `thespark`
+--
+
+INSERT INTO `thespark` (`ID`, `EmpName`, `Age`, `Gender`, `Salary`, `Location`) VALUES
+(101, 'Anshu', 25, 'Female', '50k', 'Haryana'),
+(102, 'Shivani', 26, 'Female', '60k', 'Punjab'),
+(103, 'Keshav', 22, 'Male', '30k', 'Rajasthan'),
+(104, 'Gunjan', 23, 'Female', '28k', 'Haryana'),
+(105, 'Anurag', 34, 'Male', '24k', 'Rajasthan'),
+(106, 'Naman', 38, 'Male', '37k', 'UP'),
+(107, 'Mohit', 45, 'Male', '68k', 'Punjab'),
+(108, 'Sakshi', 21, 'Female', '70k', 'UP'),
+(109, 'Monika', 42, 'Female', '43k', 'Karnataka'),
+(110, 'Aman', 50, 'Male', '30k', 'Bihar'),
+(111, 'Sumit', 45, 'Male', '45k', 'Bihar'),
+(112, 'Shubham', 43, 'Male', '45k', 'Punjab'),
+(113, 'Namita', 56, 'Female', '29k', 'Haryana'),
+(114, 'Manisha', 41, 'Female', '63k', 'Mumbai'),
+(115, 'Aakash', 27, 'Male', '47k', 'Bihar'),
+(116, 'Nishu', 24, 'Female', '78k', 'Karnataka'),
+(117, 'Mohan', 34, 'Male', '71k', 'Rajasthan'),
+(118, 'Sohan', 34, 'Male', '50k', 'UP'),
+(119, 'Mahima', 29, 'Female', '50K', 'UP'),
+(120, 'Sanjana', 24, 'Female', '20k', 'Maharasthra'),
+(121, 'Kartik', 32, 'Male', '45k', 'Maharasthra'),
+(122, 'Warrior', 25, 'Male', '46k', 'Kashmir'),
+(123, 'Rajat', 23, 'Male', '56k', 'Aasam'),
+(124, 'Rohit', 20, 'Male', '30k', 'Maharasthra'),
+(125, 'Karishma', 45, 'Female', '56k', 'Haryana'),
+(126, 'Shivani', 24, 'Female', '78k', 'UP'),
+(127, 'Meera', 41, 'Female', '45k', 'Aasam'),
+(128, 'Anshita', 23, 'Female', '32k', 'Mumbai'),
+(129, 'Sanshit', 26, 'Male', '40k', 'Punjab'),
+(130, 'Manisha', 37, 'Female', '38k', 'Aasam'),
+(131, 'Dinesh', 23, 'Male', '56k', 'UP'),
+(132, 'Himanshu', 45, 'Male', '55k', 'Bihar'),
+(133, 'Mohit', 34, 'Male', '70k', 'Haryana'),
+(134, 'Hari', 43, 'Male', '75k', 'MP'),
+(135, 'Simran', 28, 'Female', '70K', 'MP'),
+(136, 'Mayank', 45, 'Male', '25k', 'Himachal'),
+(137, 'Nancy', 33, 'Female', '40k', 'Himachal'),
+(138, 'Soni', 26, 'Female', '56k', 'MP'),
+(139, 'Mohit', 28, 'Male', '70K', 'Bihar'),
+(140, 'Diksha', 26, 'Female', '30k', 'Punjab'),
+(141, 'Manika', 36, 'Female', '50k', 'Karnataka'),
+(142, 'Sushmita', 31, 'Female', '57k', 'Rajasthan'),
+(143, 'Vivek', 22, 'Male', '40k', 'MP'),
+(144, 'Vishal', 30, 'Male', '60k', 'Haryana'),
+(145, 'Jyotika', 38, 'Female', '60k', 'Karnataka'),
+(146, 'Akshita', 56, 'Female', '56k', 'Uttrakhand'),
+(147, 'Aashish', 34, 'Male', '70k', 'Uttrakhand'),
+(148, 'Mohan', 28, 'Male', '40k', 'Haryana'),
+(149, 'Sohil', 60, 'Male', '70k', 'UP'),
+(150, 'Banish', 30, 'Male', '35k', 'Karnataka');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `thespark`
+--
+ALTER TABLE `thespark`
+  ADD PRIMARY KEY (`ID`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
